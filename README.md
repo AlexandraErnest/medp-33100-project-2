@@ -20,8 +20,7 @@
     - Vis.js library for timeline layout- https://visjs.org
  
 ## **Live Demo**
-
-- https://alexandraernest.github.io/medp-33100-project-2/
+- https://alex-arlenis-project-2.glitch.me/
 
 ## **Credits**
 
