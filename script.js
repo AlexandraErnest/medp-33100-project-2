@@ -7,16 +7,23 @@ var year;
 
 const page_buttons_y = document.querySelector(".page-buttons-y");
 const page_buttons = document.querySelector(".page-buttons");
+const warning = document.querySelector(".warning");
 
 const submitButton = document.getElementById("searchButton");
 const searchBarElement = document.getElementById("searchBar") 
 searchButton.addEventListener("click", function(){
   userInputValue = searchBarElement.value;
-  offset_index = 1;
-  initializeSearchTimeline(offset_index, userInputValue);
-  year = userInputValue
-  page_buttons_y.style.display = "flex";
-  page_buttons.style.display = "none";
+  if((userInputValue <= 2022) && (userInputValue >= 1800)){
+    offset_index = 1;
+    initializeSearchTimeline(offset_index, userInputValue);
+    year = userInputValue
+    page_buttons_y.style.display = "flex";
+    page_buttons.style.display = "none";
+    warning.style.display = "none";
+  }
+  else{
+    warning.style.display = "flex";
+  }
 })
 
 async function getHistoricalEventsSearch(api_offset, api_year) {
