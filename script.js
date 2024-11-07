@@ -2,7 +2,7 @@
 var userInputValue;
 
 var offset_index = 1;
-var topic = 'World War'
+var topic = 'War'
 var year;
 
 const page_buttons_y = document.querySelector(".page-buttons-y");
@@ -227,11 +227,11 @@ function changeTopic(newTopic, current_button){
   topic = newTopic
   initializeTimeline(offset_index, topic)
 
-  last_button.style.backgroundColor = "skyblue"
+  last_button.style.backgroundColor = "#bc8849"
   last_button.style.color = "black"
   last_button = current_button;
 
-  current_button.style.backgroundColor = '#2a5360'
+  current_button.style.backgroundColor = '#e4a65b'
   current_button.style.color = 'white'
   page_buttons.style.display = "flex";
   page_buttons_y.style.display = "none";
