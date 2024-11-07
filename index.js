@@ -4,7 +4,7 @@ const fs = require('fs')
 const path = require('path')
 
 const hostname = '127.0.0.1';
-const port = 3001;
+const port = 3000;
 
 // help from chat gpt + class to figure out how to link other files
 const server = createServer((req, res) => {
