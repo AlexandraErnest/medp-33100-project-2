@@ -4,7 +4,7 @@ const fs = require('fs')
 const path = require('path')
 
 const hostname = '127.0.0.1';
-const port = 3000;
+const port = process.env.PORT || 3000;  // Fallback to 3000 for local testing
 
 // help from chat gpt + class to figure out how to link other files
 const server = createServer((req, res) => {
