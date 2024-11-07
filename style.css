@@ -56,6 +56,7 @@ input {
 }
 
 #visualization {
+  font-size: 1em;
   background-color: #fff1cf;
   border-radius: 20px;
   margin: 50px;

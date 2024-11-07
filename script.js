@@ -2,7 +2,7 @@
 var userInputValue;
 
 var offset_index = 1;
-var topic = 'War'
+var topic = 'World War'
 var year;
 
 const page_buttons_y = document.querySelector(".page-buttons-y");
