@@ -21,7 +21,7 @@
  
 ## **Live Demo**
 
-- N/A
+- https://alexandraernest.github.io/medp-33100-project-2/
 
 ## **Credits**
 
