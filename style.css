@@ -131,6 +131,8 @@ input {
   transform: translate(2px, 2px);
 }
 
+
+
 .topic-buttons {
   margin: 15px;
   display: flex;
@@ -163,8 +165,32 @@ input {
   color: rgb(0, 0, 0);
 }
 
-topic-buttons:active {
+topic-buttons button:active {
   box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+#searchButton{
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border-radius: 20px;
+}
+
+#searchButton:active {
+  box-shadow: #ffe4bc 2px 2px 0 0;
   transform: translate(2px, 2px);
 }
 
@@ -176,37 +202,49 @@ topic-buttons:active {
   background: #ffe9b3;
 }
 .vis-minor {
-    background: #ffe797;
+  background: #ffe797;
 }
 
 .vis-item.vis-selected {
-  background-color: #ffe4b9 !important; 
-  border-color: #cc6900 !important; 
+  background-color: #ffe4b9 !important;
+  border-color: #cc6900 !important;
 }
 
-.vis-item.vis-selected{
-    background-color: #ffe4b9 !important; 
-    border-color: #cc6900 !important; 
-    font-size: 1.2em;
-  }
+.vis-item.vis-selected {
+  background-color: #ffe4b9 !important;
+  border-color: #cc6900 !important;
+  font-size: 1.2em;
+}
+
+.vis-item {
+  background-color: #fde3b3 !important;
+  border-color: #884545 !important;
+}
 
 .vis-item:hover {
-  background-color: #d9b675 !important; 
-  border-color: #491c1c !important; 
+  background-color: #d9b675 !important;
+  border-color: #491c1c !important;
 }
 
 #searchBar {
-    border: 2px solid #644830;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #a56934;
-    font-size: 1em;
-    text-align: center;
-   }
-   
-   #searchBar:focus {
-    outline-color: rgb(69, 40, 19);
-    background-color: #a5774f;
-    color: #4a3b2d;
-    box-shadow: 5px 5px #644830;
-   }
+  border: 2px solid #644830;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #a56934;
+  font-size: 1em;
+  text-align: center;
+}
+
+#searchBar:focus {
+  outline-color: rgb(69, 40, 19);
+  background-color: #a5774f;
+  color: #4a3b2d;
+  box-shadow: 5px 5px #644830;
+}
+
+.searchWord {
+  font-size: 1.5em;
+  color: #422800;
+  font-style: italic;
+  font-weight: 900;
+}
